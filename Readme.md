@@ -41,8 +41,8 @@
     { illustrations: { $exists: true } }
     "Guide de survie en forêt" — seul document avec le champ illustrations: true
 
-#1.3 — Filtrer
-##Q11 — Une année précise
+# 1.3 — Filtrer
+## Q11 — Une année précise
 
     { annee: 2018 }
     "Cuisine du monde"
