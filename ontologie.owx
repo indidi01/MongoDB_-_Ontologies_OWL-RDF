@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/aaa/ontologies/2026/8/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/aaa/ontologies/2026/8/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/aaa/ontologies/2026/8/untitled-ontology-3/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Acteur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personne"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Realisateur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Studio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aJoueDans"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aPourActeur"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aPourFiliale"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aPourGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aPourSuite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aProduit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aRealise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estDuGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estFilialeDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estProduitPar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estRealisePar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estSuiteDe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aPourAnnee"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aPourIdentifiantIMDB"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aPourNom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aPourNoteIMDB"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aPourTitre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActionGenre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Casablanca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChristopherNolan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DrameGenre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inception"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LeonnardoDicaprio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WarnerAnimation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WarnerBros"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WarnerBrosGroup"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Acteur"/>
+        <Class IRI="#Personne"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Realisateur"/>
+        <Class IRI="#Personne"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Acteur"/>
+        <Class IRI="#Realisateur"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Film"/>
+        <Class IRI="#Genre"/>
+        <Class IRI="#Personne"/>
+        <Class IRI="#Studio"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#ActionGenre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Casablanca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Realisateur"/>
+        <NamedIndividual IRI="#ChristopherNolan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#DrameGenre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Inception"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acteur"/>
+        <NamedIndividual IRI="#LeonnardoDicaprio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Studio"/>
+        <NamedIndividual IRI="#WarnerAnimation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Studio"/>
+        <NamedIndividual IRI="#WarnerBros"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Studio"/>
+        <NamedIndividual IRI="#WarnerBrosGroup"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aRealise"/>
+        <NamedIndividual IRI="#ChristopherNolan"/>
+        <NamedIndividual IRI="#Inception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourGenre"/>
+        <NamedIndividual IRI="#Inception"/>
+        <NamedIndividual IRI="#ActionGenre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estProduitPar"/>
+        <NamedIndividual IRI="#Inception"/>
+        <NamedIndividual IRI="#WarnerBros"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aJoueDans"/>
+        <NamedIndividual IRI="#LeonnardoDicaprio"/>
+        <NamedIndividual IRI="#Inception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estFilialeDe"/>
+        <NamedIndividual IRI="#WarnerAnimation"/>
+        <NamedIndividual IRI="#WarnerBros"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estFilialeDe"/>
+        <NamedIndividual IRI="#WarnerBros"/>
+        <NamedIndividual IRI="#WarnerBrosGroup"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aPourAnnee"/>
+        <NamedIndividual IRI="#Casablanca"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1942</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aPourTitre"/>
+        <NamedIndividual IRI="#Casablanca"/>
+        <Literal>Casablanca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aPourNom"/>
+        <NamedIndividual IRI="#ChristopherNolan"/>
+        <Literal>Christopher Nolan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aPourAnnee"/>
+        <NamedIndividual IRI="#Inception"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aPourIdentifiantIMDB"/>
+        <NamedIndividual IRI="#Inception"/>
+        <Literal>tt1375666</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aPourNoteIMDB"/>
+        <NamedIndividual IRI="#Inception"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aPourTitre"/>
+        <NamedIndividual IRI="#Inception"/>
+        <Literal>Inception</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aPourNom"/>
+        <NamedIndividual IRI="#LeonnardoDicaprio"/>
+        <Literal>Leonardo Dicaprio</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#aJoueDans"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#aPourActeur"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#aPourFiliale"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#aPourGenre"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#aPourSuite"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#aProduit"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#aRealise"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estDuGenre"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estFilialeDe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estProduitPar"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estRealisePar"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estSuiteDe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#aJoueDans"/>
+        <ObjectProperty IRI="#aPourActeur"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#aPourFiliale"/>
+        <ObjectProperty IRI="#estFilialeDe"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#aPourGenre"/>
+        <ObjectProperty IRI="#estDuGenre"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#aPourSuite"/>
+        <ObjectProperty IRI="#estSuiteDe"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#aProduit"/>
+        <ObjectProperty IRI="#estProduitPar"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#aRealise"/>
+        <ObjectProperty IRI="#estRealisePar"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#estFilialeDe"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aJoueDans"/>
+        <Class IRI="#Acteur"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aPourGenre"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aRealise"/>
+        <Class IRI="#Realisateur"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estFilialeDe"/>
+        <Class IRI="#Studio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estProduitPar"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estSuiteDe"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aJoueDans"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aPourGenre"/>
+        <Class IRI="#Genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aRealise"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estFilialeDe"/>
+        <Class IRI="#Studio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estProduitPar"/>
+        <Class IRI="#Studio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estSuiteDe"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aPourAnnee"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aPourIdentifiantIMDB"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aPourNom"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aPourNoteIMDB"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aPourTitre"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aPourAnnee"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aPourIdentifiantIMDB"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aPourNom"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aPourNoteIMDB"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aPourTitre"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aPourAnnee"/>
+        <Class IRI="#Film"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aPourIdentifiantIMDB"/>
+        <Class IRI="#Film"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aPourNom"/>
+        <Class IRI="#Personne"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aPourNoteIMDB"/>
+        <Class IRI="#Film"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aPourTitre"/>
+        <Class IRI="#Film"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#aPourAnnee"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aPourIdentifiantIMDB"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aPourNom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aPourNoteIMDB"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aPourTitre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
